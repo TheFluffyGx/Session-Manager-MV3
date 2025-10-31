@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SESSION MANAGER</title>
+<style>
+  body {
+    background-color: #1b1d23;
+    color: #e0e0e0;
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    padding: 10px;
+    width: 420px;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  h1 {
+    font-size: 16px;
+    margin: 0;
+  }
+
+  button {
+    background: #2b2d34;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 6px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  button:hover {
+    background: #3b3e46;
+  }
+
+  #sessions {
+    max-height: 420px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .session {
+    background: #24262b;
+    border-radius: 8px;
+    padding: 6px 8px;
+  }
+
+  .session-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .session-actions {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    opacity: 0.9;
+    margin-top: 4px;
+  }
+
+  .rename-input {
+    width: 70%;
+    background: transparent;
+    border: 1px solid #444;
+    color: #e0e0e0;
+    border-radius: 4px;
+    padding: 2px 4px;
+  }
+
+  .red {
+    color: #ff5555;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1>SESSION MANAGER</h1>
+    <div>
+      <button id="import">Import</button>
+      <button id="export">Export</button>
+    </div>
+  </header>
+
+  <div id="sessions"></div>
+
+  <footer>
+    <button id="reset" class="red">Reset</button>
+    <button id="save">Save Session</button>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
