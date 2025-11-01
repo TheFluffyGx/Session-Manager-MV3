@@ -1,7 +1,7 @@
 # SESSION MANAGER MV3
-A Chrome extension to save, restore, and manage window sessions with tabs and tab groups.
+A Chrome extension for managing tabs and browser sessions efficiently, built to save, restore, and manage window sessions with tabs and tab groups.
 
-This is a modern MV3 version of the original Session Manager, keeping all the original functionality while adding dark theme and proper tab group support.
+Built for Manifest V3 (MV3). This is a modern MV3 version of the original Session Manager, keeping all the original functionality while adding dark theme and proper tab group support.
 
 # Features
 
