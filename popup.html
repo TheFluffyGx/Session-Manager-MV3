@@ -87,6 +87,36 @@
     align-items: center;
     margin-top: 10px;
   }
+
+  /* ===== Drag & drop visuals ===== */
+  .session.dragging {
+    opacity: 0.6;
+  }
+  .session.drag-over {
+    outline: 2px dashed #4da6ff;
+  }
+
+  /* ===== Dark themed scrollbar for the sessions list ===== */
+  #sessions::-webkit-scrollbar {
+    width: 10px;
+  }
+  #sessions::-webkit-scrollbar-track {
+    background: #1b1d23;
+    border-left: 1px solid #333;
+  }
+  #sessions::-webkit-scrollbar-thumb {
+    background-color: #2e303b;
+    border-radius: 6px;
+    border: 2px solid #1b1d23;
+  }
+  #sessions::-webkit-scrollbar-thumb:hover {
+    background-color: #4da6ff;
+  }
+  /* (Optional) Firefox */
+  #sessions {
+    scrollbar-color: #2e303b #1b1d23;
+    scrollbar-width: thin;
+  }
 </style>
 </head>
 <body>

@@ -127,3 +127,21 @@ button.reset {
   background: var(--card);
   border-top: 1px solid var(--border);
 }
+/* ===== Scrollbar Dark Theme ===== */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1b1d23;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #2e303b;
+  border-radius: 6px;
+  border: 2px solid #1b1d23;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #4da6ff;
+}
